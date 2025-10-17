@@ -124,3 +124,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @keyframes border-flow {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .animate-border-flow {
+    animation: border-flow 8s linear infinite;
+  }
+
+  @keyframes border-flow-360 {
+    0% {
+      stroke-dashoffset: 4000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .animate-border-flow-360 {
+    animation: border-flow-360 12s linear infinite;
+  }
+}
