@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Dark Protocol",
   description: "From the shadows, emerge.",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
   },
 };
 
