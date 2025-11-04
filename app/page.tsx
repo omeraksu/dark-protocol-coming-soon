@@ -182,15 +182,15 @@ export default function ComingSoon() {
         />
       </svg>
 
-      <header className='max-w-7xl mx-auto w-full px-6 py-6 flex items-center justify-between relative z-10'>
-        <div className='flex items-center gap-2 select-none'>
+      <header className='max-w-7xl mx-auto w-full px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between relative z-10'>
+        <div className='flex items-center gap-1.5 sm:gap-2 select-none'>
           <img
             src='/dark-logo.svg'
             alt='Dark'
-            className='h-8'
+            className='h-6 sm:h-8'
             draggable='false'
           />
-          <span className='text-xs text-white/50 px-2 py-0.5 bg-white/5 rounded border border-white/10'>
+          <span className='text-[10px] sm:text-xs text-white/50 px-1.5 sm:px-2 py-0.5 bg-white/5 rounded border border-white/10'>
             coming back
           </span>
         </div>
@@ -246,22 +246,22 @@ export default function ComingSoon() {
         <div className='w-[100px]'></div>
       </header>
 
-      <main className='flex-1 flex items-center justify-center px-6 relative z-10'>
-        <div className='w-full max-w-4xl mx-auto text-center space-y-10'>
+      <main className='flex-1 flex items-center justify-center px-4 sm:px-6 relative z-10'>
+        <div className='w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-10'>
           {/* Başlık (eski stil): Dark Protocol + yeşil Returns */}
-          <div className='space-y-6'>
-            <h1 className='text-7xl md:text-8xl font-light tracking-tight text-white'>
+          <div className='space-y-4 sm:space-y-6'>
+            <h1 className='text-5xl sm:text-7xl md:text-4xl lg:text-8xl font-light tracking-tight text-white'>
               Dark Protocol
               <span className='block text-emerald-400'>Join the Waitlist</span>
-              <p className='text-4xl  text-white/50'>
-                Will you be one of the 50 chosen to dance in the shadows?
+              <p className='text-white/50 text-lg sm:text-1xl md:text-3xl lg:text-5xl'>
+                Will you be one of the 50 chosen <br /> to dance in the shadows?
               </p>
             </h1>
-            <div className='h-px w-32 mx-auto bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent' />
+            <div className='h-px w-20 sm:w-32 mx-auto bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent' />
           </div>
 
           {/* Form (glass) başlık ve açıklama arasına taşındı */}
-          <div className='w-full max-w-md mx-auto rounded-3xl p-8 space-y-6 bg-white/10 backdrop-blur-2xl border border-white/15 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
+          <div className='w-full max-w-md mx-auto rounded-2xl sm:rounded-3xl p-6 sm:p-8 space-y-4 sm:space-y-6 bg-white/10 backdrop-blur-2xl border border-white/15 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
             <form onSubmit={handleSubmit} className='space-y-4'>
               <div className='relative'>
                 <input
@@ -304,14 +304,14 @@ export default function ComingSoon() {
           </div>
 
           {/* Açıklama metinleri (gri/beyaz) */}
-          <p className='text-xl md:text-2xl text-white/50 leading-relaxed font-jetbrains font-light'>
+          <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-white/50 leading-relaxed font-jetbrains font-light px-4'>
             Dark is coming back online.
           </p>
         </div>
       </main>
 
-      <footer className='max-w-7xl mx-auto w-full px-6 py-8 relative z-10'>
-        <div className='flex items-center justify-center gap-8 text-sm text-white/40'>
+      <footer className='max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 sm:py-8 relative z-10'>
+        <div className='flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-white/40'>
           <img
             src='/dark-logo.svg'
             alt='Dark'
@@ -346,6 +346,13 @@ export default function ComingSoon() {
             rel='noopener noreferrer'
             className='hover:text-white/60 transition-colors'>
             discord
+          </a>
+          <a
+            href='https://t.me/+r4wLMNGv-MRhZThh'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:text-white/60 transition-colors'>
+            telegram
           </a>
         </div>
       </footer>
