@@ -252,7 +252,10 @@ export default function ComingSoon() {
           <div className='space-y-6'>
             <h1 className='text-7xl md:text-8xl font-light tracking-tight text-white'>
               Dark Protocol
-              <span className='block text-emerald-400'>Returns</span>
+              <span className='block text-emerald-400'>Join the Waitlist</span>
+              <p className='text-4xl  text-white/50'>
+                Will you be one of the 50 chosen to dance in the shadows?
+              </p>
             </h1>
             <div className='h-px w-32 mx-auto bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent' />
           </div>
@@ -338,11 +341,11 @@ export default function ComingSoon() {
             governance
           </a>
           <a
-            href='https://github.com/darkprotocolhq'
+            href='https://discord.com/invite/X9fvtuAq9H'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-white/60 transition-colors'>
-            github
+            discord
           </a>
         </div>
       </footer>
