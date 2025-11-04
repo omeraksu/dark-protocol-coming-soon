@@ -269,7 +269,9 @@ export default function ComingSoon() {
                   placeholder='Solana address'
                   value={solanaAddress}
                   onChange={(e) => setSolanaAddress(e.target.value)}
-                  className='w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/60 shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] focus:outline-none focus:ring-4 focus:ring-white/20 focus:border-white/30 backdrop-blur-xl'
+                  className='w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/60 shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] focus:outline-none focus:ring-4 focus:ring-white/20 focus:border-white/30 backdrop-blur-xl
+             appearance-none [webkit-appearance:none] [outline:none] [font-size:16px] [padding-top:14px] [padding-bottom:14px]'
+                  inputMode='text'
                   required
                 />
                 <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-white/10' />
@@ -280,7 +282,9 @@ export default function ComingSoon() {
                   placeholder='Email (optional)'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className='w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/60 shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] focus:outline-none focus:ring-4 focus:ring-white/20 focus:border-white/30 backdrop-blur-xl'
+                  className='w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/60 shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] focus:outline-none focus:ring-4 focus:ring-white/20 focus:border-white/30 backdrop-blur-xl
+             appearance-none [webkit-appearance:none] [outline:none] [font-size:16px] [padding-top:14px] [padding-bottom:14px]'
+                  inputMode='email'
                 />
                 <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-white/10' />
               </div>
