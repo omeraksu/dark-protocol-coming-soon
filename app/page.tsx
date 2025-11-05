@@ -127,7 +127,7 @@ export default function ComingSoon() {
 
   return (
     <div
-      className='min-h-screen flex flex-col relative overflow-hidden'
+      className='h-[100dvh] sm:min-h-screen flex flex-col relative overflow-hidden sm:overflow-visible'
       style={{
         backgroundImage: 'url("/ChatGPT Image Nov 4, 2025, 11_03_43 AM.png")',
         backgroundSize: "cover",
@@ -240,8 +240,8 @@ export default function ComingSoon() {
         <div className='w-[100px]'></div>
       </header>
 
-      <main className='flex-1 flex items-center justify-center px-4 sm:px-6 relative z-10'>
-        <div className='w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-10'>
+      <main className='flex-1 flex items-center justify-center px-3 sm:px-6 relative z-10'>
+        <div className='w-full max-w-4xl mx-auto text-center space-y-4 sm:space-y-10'>
           {/* Başlık (eski stil): Dark Protocol + yeşil Returns */}
           <div className='space-y-4 sm:space-y-6'>
             <div className='flex items-center justify-center'>
@@ -262,7 +262,7 @@ export default function ComingSoon() {
           </div>
 
           {/* Form (glass) başlık ve açıklama arasına taşındı */}
-          <div className='w-full max-w-md mx-auto rounded-2xl sm:rounded-3xl p-6 sm:p-8 space-y-4 sm:space-y-6 bg-white/10 backdrop-blur-2xl border border-white/15 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
+          <div className='w-full max-w-sm sm:max-w-md mx-auto rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-4 sm:space-y-6 bg-white/10 backdrop-blur-2xl border border-white/15 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
             <form onSubmit={handleSubmit} className='space-y-4'>
               <div className='relative'>
                 <input
@@ -321,8 +321,8 @@ export default function ComingSoon() {
         </div>
       </main>
 
-      <footer className='max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 sm:py-8 relative z-10'>
-        <div className='flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-white/40'>
+      <footer className='max-w-7xl mx-auto w-full px-3 sm:px-6 py-4 sm:py-8 relative z-10'>
+        <div className='flex flex-wrap items-center justify-center gap-3 sm:gap-8 text-[11px] sm:text-sm text-white/40'>
           <img
             src='/dark-logo.svg'
             alt='Dark'
