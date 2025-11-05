@@ -6,6 +6,7 @@ import { JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Suspense } from "react";
+import type { Viewport } from "next";
 import Script from "next/script";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -19,6 +20,14 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+};
+
+// iOS Safari input focus zoom'unu engellemek ve viewport'u sabitlemek için
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
