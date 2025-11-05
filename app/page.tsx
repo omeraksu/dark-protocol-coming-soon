@@ -127,11 +127,9 @@ export default function ComingSoon() {
 
   return (
     <div
-      className='h-[100dvh] sm:min-h-screen flex flex-col relative overflow-hidden sm:overflow-visible'
+      className='sm:min-h-screen flex flex-col relative overflow-hidden sm:overflow-visible bg-position-[center_58%] sm:bg-position-[center_38%] md:bg-position-[center_40%] lg:bg-position-[center_55%] bg-no-repeat bg-size-[200%] sm:bg-size-[130%] md:bg-size-[120%] lg:bg-size-[110%] xl:bg-size-[100%]'
       style={{
         backgroundImage: 'url("/ChatGPT Image Nov 4, 2025, 11_03_43 AM.png")',
-        backgroundSize: "cover",
-        backgroundPosition: "center",
       }}>
       {/* Soft radial vignette and subtle gradient overlay for glassy depth */}
       <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.35)_70%,rgba(0,0,0,0.65)_100%)]' />
@@ -248,8 +246,8 @@ export default function ComingSoon() {
               <img
                 src='/dark-logo.svg'
                 alt='Dark'
-                width='72px'
                 draggable='false'
+                style={{ width: "clamp(40px, 8vw, 72px)" }}
               />
             </div>
             <span className='block text-emerald-400 text-lg sm:text-2xl md:text-3xl lg:text-4xl'>
@@ -262,8 +260,8 @@ export default function ComingSoon() {
           </div>
 
           {/* Form (glass) başlık ve açıklama arasına taşındı */}
-          <div className='w-full max-w-sm sm:max-w-md mx-auto rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-4 sm:space-y-6 bg-white/10 backdrop-blur-2xl border border-white/15 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
-            <form onSubmit={handleSubmit} className='space-y-4'>
+          <div className='w-full max-w-sm sm:max-w-md mx-auto rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-3 sm:space-y-6 bg-white/10 backdrop-blur-2xl border border-white/15 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
+            <form onSubmit={handleSubmit} className='space-y-3 sm:space-y-4'>
               <div className='relative'>
                 <input
                   type='text'
