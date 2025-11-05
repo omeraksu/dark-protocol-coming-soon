@@ -184,12 +184,6 @@ export default function ComingSoon() {
 
       <header className='max-w-7xl mx-auto w-full px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between relative z-10'>
         <div className='flex items-center gap-1.5 sm:gap-2 select-none'>
-          <img
-            src='/dark-logo.svg'
-            alt='Dark'
-            className='h-6 sm:h-8'
-            draggable='false'
-          />
           <span className='text-[10px] sm:text-xs text-white/50 px-1.5 sm:px-2 py-0.5 bg-white/5 rounded border border-white/10'>
             coming back
           </span>
@@ -249,14 +243,24 @@ export default function ComingSoon() {
       <main className='flex-1 flex items-center justify-center px-4 sm:px-6 relative z-10'>
         <div className='w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-10'>
           {/* Başlık (eski stil): Dark Protocol + yeşil Returns */}
+          <div className='flex items-center justify-center'>
+            <img
+              src='/dark-logo.svg'
+              alt='Dark'
+              draggable='false'
+              width='72px'
+              height='auto'
+            />
+          </div>
+
           <div className='space-y-4 sm:space-y-6'>
-            <h1 className='text-5xl sm:text-7xl md:text-4xl lg:text-8xl font-light tracking-tight text-white'>
-              Dark Protocol
-              <span className='block text-emerald-400'>Join the Waitlist</span>
-              <p className='text-white/50 text-lg sm:text-1xl md:text-3xl lg:text-5xl'>
-                Will you be one of the 50 chosen <br /> to dance in the shadows?
-              </p>
-            </h1>
+            <h3 className='block text-emerald-400 text-lg sm:text-1xl md:text-3xl lg:text-4xl'>
+              Join the Waitlist
+            </h3>
+            <p className='text-white/50 text-lg sm:text-xl md:text-xl lg:text-3xl'>
+              Will you be one of the 50 chosen <br /> to dance in the shadows?
+            </p>
+
             <div className='h-px w-20 sm:w-32 mx-auto bg-gradient-to-r from-transparent via-emerald-400/60 to-transparent' />
           </div>
 
