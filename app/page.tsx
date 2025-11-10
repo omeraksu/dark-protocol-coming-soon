@@ -259,8 +259,7 @@ export default function ComingSoon() {
 
           {/* Form (glass) başlık ve açıklama arasına taşındı */}
           <div className='w-full max-w-sm sm:max-w-md mx-auto rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-3 sm:space-y-6 bg-white/10 backdrop-blur-2xl border border-white/15 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
-            <form onSubmit={handleSubmit} className='space-y-3 sm:space-y-4'>
-              {/* <div className='relative'>
+            {/* <div className='relative'>
                 <input
                   type='text'
                   inputMode='text'
@@ -291,23 +290,17 @@ export default function ComingSoon() {
                 />
                 <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-white/10' />
               </div> */}
-              {/* <div className='text-emerald-300 font-semibold text-center tracking-[0.2em] drop-shadow-[0_2px_8px_rgba(16,185,129,0.25)]'>
+            {/* <div className='text-emerald-300 font-semibold text-center tracking-[0.2em] drop-shadow-[0_2px_8px_rgba(16,185,129,0.25)]'>
                 {countdown}
               </div> */}
-              <button
-                type='submit'
-                disabled={submitting}
-                className='w-full py-3 rounded-xl bg-emerald-400 text-black font-semibold shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:bg-emerald-300 transition disabled:opacity-60 border border-emerald-200/50 backdrop-blur-xl'>
-                {submitting ? "Sending..." : "Access BETA"}
-              </button>
-              {formMessage ? (
-                <div
-                  className='text-center text-sm'
-                  style={{ color: formMessage.color }}>
-                  {formMessage.text}
-                </div>
-              ) : null}
-            </form>
+            <div>
+              <a
+                href='https://dark-protocol-frontend.vercel.app/'
+                target='_blank'
+                className='w-full py-4 block rounded-xl bg-emerald-400 text-black font-semibold shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:bg-emerald-300 transition disabled:opacity-60 border border-emerald-200/50 backdrop-blur-xl'>
+                Access BETA
+              </a>
+            </div>
           </div>
 
           {/* Açıklama metinleri (gri/beyaz) */}
