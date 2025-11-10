@@ -183,7 +183,7 @@ export default function ComingSoon() {
       <header className='max-w-7xl mx-auto w-full px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between relative z-10'>
         <div className='flex items-center gap-1.5 sm:gap-2 select-none'>
           <span className='text-[10px] sm:text-xs text-white/50 px-1.5 sm:px-2 py-0.5 bg-white/5 rounded border border-white/10'>
-            coming back
+            BETA LIVE
           </span>
         </div>
 
