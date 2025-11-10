@@ -251,18 +251,16 @@ export default function ComingSoon() {
               />
             </div>
             <span className='block text-emerald-400 text-lg sm:text-2xl md:text-3xl lg:text-4xl'>
-              Join the Waitlist
+              Dark Protocol is Back!
             </span>
-            <p className='text-white/50 text-xl sm:text-xl md:text-xl lg:text-2xl'>
-              Will you be one of the 50 chosen <br /> to dance in the shadows?
-            </p>
+
             <div className='h-px w-20 sm:w-32 mx-auto bg-gradient-to-b from-transparent via-emerald-400/60 to-transparent' />
           </div>
 
           {/* Form (glass) başlık ve açıklama arasına taşındı */}
           <div className='w-full max-w-sm sm:max-w-md mx-auto rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-3 sm:space-y-6 bg-white/10 backdrop-blur-2xl border border-white/15 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
             <form onSubmit={handleSubmit} className='space-y-3 sm:space-y-4'>
-              <div className='relative'>
+              {/* <div className='relative'>
                 <input
                   type='text'
                   inputMode='text'
@@ -292,15 +290,15 @@ export default function ComingSoon() {
                   className='w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white text-base placeholder:text-white/60 shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] focus:outline-none focus:ring-4 focus:ring-white/20 focus:border-white/30 backdrop-blur-xl'
                 />
                 <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-white/10' />
-              </div>
-              <div className='text-emerald-300 font-semibold text-center tracking-[0.2em] drop-shadow-[0_2px_8px_rgba(16,185,129,0.25)]'>
+              </div> */}
+              {/* <div className='text-emerald-300 font-semibold text-center tracking-[0.2em] drop-shadow-[0_2px_8px_rgba(16,185,129,0.25)]'>
                 {countdown}
-              </div>
+              </div> */}
               <button
                 type='submit'
                 disabled={submitting}
                 className='w-full py-3 rounded-xl bg-emerald-400 text-black font-semibold shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:bg-emerald-300 transition disabled:opacity-60 border border-emerald-200/50 backdrop-blur-xl'>
-                {submitting ? "Sending..." : "Join Waitlist"}
+                {submitting ? "Sending..." : "Access BETA"}
               </button>
               {formMessage ? (
                 <div
@@ -314,7 +312,7 @@ export default function ComingSoon() {
 
           {/* Açıklama metinleri (gri/beyaz) */}
           <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-white/50 leading-relaxed font-jetbrains font-light px-4'>
-            Dark is coming back online.
+            Dark Protocol BETA is live!
           </p>
         </div>
       </main>
