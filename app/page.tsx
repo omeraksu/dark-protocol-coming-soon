@@ -295,7 +295,7 @@ export default function ComingSoon() {
               </div> */}
             <div>
               <a
-                href='https://dark-protocol-frontend.vercel.app/'
+                href='https://beta.darkprotocol.io/'
                 target='_blank'
                 className='w-full py-4 block rounded-xl bg-emerald-400 text-black font-semibold shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:bg-emerald-300 transition disabled:opacity-60 border border-emerald-200/50 backdrop-blur-xl'>
                 Access BETA
