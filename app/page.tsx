@@ -200,7 +200,7 @@ export default function LandingPage() {
                 onClick={() => setActiveFeature(index)}
                 className='group relative p-6 border border-white/10 hover:border-emerald-400/50 bg-black/40 backdrop-blur-sm transition-all duration-300'
                 aria-label={`Learn about ${feature.title}`}>
-                <Icon className='w-8 h-8 mb-4 text-emerald-400' />
+                <Icon className='w-full h-8 mb-4 text-emerald-400' />
                 <h3 className='text-lg font-medium mb-1'>{feature.title}</h3>
                 <p className='text-sm text-white/50'>{feature.subtitle}</p>
                 <div className='absolute inset-0 bg-emerald-400/0 group-hover:bg-emerald-400/5 transition-colors pointer-events-none' />
