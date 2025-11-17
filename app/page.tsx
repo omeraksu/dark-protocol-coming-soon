@@ -170,7 +170,7 @@ export default function LandingPage() {
         </Link>
 
         <Link
-          href='https://beta.darkprotocol.io'
+          href='https://beta.darkprotocol.io/'
           target='_blank'
           className='px-4 py-2 border border-white/20 rounded hover:bg-white/5 transition-colors text-sm'>
           Launch App
@@ -178,11 +178,11 @@ export default function LandingPage() {
       </header>
 
       <main className='relative z-20 flex-1 flex flex-col items-center justify-center px-8 pb-12'>
-        <div className='text-center mb-16 max-w-3xl'>
-          <h1 className='text-6xl md:text-7xl font-light mb-6 tracking-tight'>
+        <div className='text-center mb-12 md:mb-16 max-w-3xl'>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light mb-4 md:mb-6 tracking-tight'>
             Dark Protocol
           </h1>
-          <p className='text-xl md:text-2xl text-white/60 font-light font-jetbrains mb-8'>
+          <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-white/60 font-light font-jetbrains mb-6 md:mb-8 px-4'>
             Private transactions on Solana.
             <br />
             <span className='text-emerald-400'>
@@ -191,18 +191,22 @@ export default function LandingPage() {
           </p>
         </div>
 
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-5xl'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 w-full max-w-5xl'>
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <button
                 key={index}
                 onClick={() => setActiveFeature(index)}
-                className='group relative p-6 border border-white/10 hover:border-emerald-400/50 bg-black/40 backdrop-blur-sm transition-all duration-300'
+                className='group relative p-4 md:p-6 border border-white/10 hover:border-emerald-400/50 bg-black/40 backdrop-blur-sm transition-all duration-300 flex flex-col items-center justify-center'
                 aria-label={`Learn about ${feature.title}`}>
-                <Icon className='w-full h-8 mb-4 text-emerald-400' />
-                <h3 className='text-lg font-medium mb-1'>{feature.title}</h3>
-                <p className='text-sm text-white/50'>{feature.subtitle}</p>
+                <Icon className='w-6 h-6 md:w-8 md:h-8 mb-3 md:mb-4 text-emerald-400' />
+                <h3 className='text-sm md:text-lg font-medium mb-1 text-center'>
+                  {feature.title}
+                </h3>
+                <p className='text-xs md:text-sm text-white/50 text-center'>
+                  {feature.subtitle}
+                </p>
                 <div className='absolute inset-0 bg-emerald-400/0 group-hover:bg-emerald-400/5 transition-colors pointer-events-none' />
               </button>
             );
@@ -290,18 +294,18 @@ export default function LandingPage() {
         </div>
       )}
 
-      <footer className='relative z-20 max-w-7xl mx-auto w-full px-6 py-8'>
+      <footer className='relative z-20 w-full px-4 md:px-6 py-6 md:py-8'>
         <nav
-          className='flex items-center justify-center gap-8 text-sm text-white/40'
+          className='flex flex-wrap items-center justify-center gap-3 md:gap-8 text-xs md:text-sm text-white/40'
           aria-label='Footer navigation'>
           <img
             src='/dark-logo.svg'
             alt=''
-            className='h-5 opacity-60 select-none'
+            className='h-4 md:h-5 opacity-60 select-none'
             draggable='false'
             aria-hidden='true'
           />
-          <div className='h-4 w-px bg-white/20' aria-hidden='true' />
+          <div className='h-3 md:h-4 w-px bg-white/20' aria-hidden='true' />
           <a
             href='https://jup.ag/swap?sell=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&buy=FmQ7v2QUqXVVtAXkngBh3Mwx7s3mKT55nQ5Z673dURYS'
             target='_blank'
@@ -321,7 +325,7 @@ export default function LandingPage() {
             href='https://v2.realms.today/dao/EJ5vp5ivz4nKmuRqTYMDYMBBKGwrr5BG3w5hk7bMRAvB/proposals'
             target='_blank'
             rel='noopener noreferrer'
-            className='hover:text-white/60 transition-colors'>
+            className='hover:text-white/60 transition-colors hidden sm:inline'>
             governance
           </a>
           <a
@@ -332,7 +336,7 @@ export default function LandingPage() {
             github
           </a>
           <a
-            href='https://beta.darkprotocol.io'
+            href='https://beta.darkprotocol.io/'
             target='_blank'
             className='hover:text-white/60 transition-colors'>
             app
