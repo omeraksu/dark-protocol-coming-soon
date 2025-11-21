@@ -173,7 +173,7 @@ export default function LandingPage() {
           href=''
           target=''
           className='px-4 py-2 border border-white/20 rounded hover:bg-white/5 transition-colors text-sm'>
-          Maintenance
+          Under Maintenance
         </Link>
       </header>
 
