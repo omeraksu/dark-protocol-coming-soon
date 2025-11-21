@@ -170,10 +170,10 @@ export default function LandingPage() {
         </Link>
 
         <Link
-          href='https://beta.darkprotocol.io/'
-          target='_blank'
+          href=''
+          target=''
           className='px-4 py-2 border border-white/20 rounded hover:bg-white/5 transition-colors text-sm'>
-          Launch App
+          Maintenance
         </Link>
       </header>
 
